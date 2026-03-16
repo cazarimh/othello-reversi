@@ -1,0 +1,6 @@
+# Python bytecode cache directories
+__pycache__/
+**/__pycache__/
+
+# VS Code workspace settings
+.vscode/
