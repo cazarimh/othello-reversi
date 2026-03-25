@@ -20,7 +20,7 @@ class Othello:
 		Othello.setInitialParameters()
 
 		while (not Othello.hasWinner):
-			Othello.runRound()
+			Othello.runRound(isComputer=False)
 			print(Othello.board)
 			Othello.verifyWinner()
 			Othello.changeTurn()
@@ -53,11 +53,14 @@ class Othello:
 		return
 
 	@staticmethod
-	def runRound():
-		currentPossiblePlays = Othello.possiblePlays()
-		if (not currentPossiblePlays.hasPossiblePlays): return
-
-		chosenPos = Othello.displayPossiblePlays(currentPossiblePlays)
+	def runRound(isComputer: bool):
+		if (not isComputer):
+			currentPossiblePlays = Othello.possiblePlays()
+			if (not currentPossiblePlays.hasPossiblePlays): return
+			chosenPos = Othello.displayPossiblePlays(currentPossiblePlays)
+		else:
+			pass
+		
 		chosenDir = currentPossiblePlays.playsList[chosenPos]
 		Othello.propagateChoose(chosenPos, chosenDir)
 
