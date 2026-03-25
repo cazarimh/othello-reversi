@@ -1,6 +1,8 @@
 from game.utils import Player, Direction, Directions, PossiblePlays
 import numpy as np
 
+from agent.agent import Agent
+
 class Othello:
 	board: list[list[Player]]
 
@@ -19,11 +21,14 @@ class Othello:
 	def startGame():
 		Othello.setInitialParameters()
 
+		isComputer = True
 		while (not Othello.hasWinner):
-			Othello.runRound(isComputer=False)
+			Othello.runRound(isComputer)
 			print(Othello.board)
 			Othello.verifyWinner()
 			Othello.changeTurn()
+
+			isComputer = not isComputer
 
 		if (Othello.winner != Player.EMPTY):
 			print(f'Congratulations, Player {Othello.winner.name}! You won with {Othello.score[Othello.winner.name]}:{Othello.score[Othello.loser.name]} points.')
@@ -34,7 +39,8 @@ class Othello:
 
 	@staticmethod
 	def setInitialParameters():
-		Othello.board = np.zeros(shape=(8, 8), dtype=np.int8)
+		Othello.board = [[Player.EMPTY for _ in range(8)] for _ in range(8)]
+		
 		Othello.board[3][4] = Player.BLACK
 		Othello.board[4][3] = Player.BLACK
 		Othello.board[3][3] = Player.WHITE
@@ -54,12 +60,14 @@ class Othello:
 
 	@staticmethod
 	def runRound(isComputer: bool):
+		currentPossiblePlays = Othello.possiblePlays()
+		if (not currentPossiblePlays.hasPossiblePlays): return
+
 		if (not isComputer):
-			currentPossiblePlays = Othello.possiblePlays()
-			if (not currentPossiblePlays.hasPossiblePlays): return
 			chosenPos = Othello.displayPossiblePlays(currentPossiblePlays)
 		else:
-			pass
+			agent = Agent(Othello.turn, Othello.opponent, Othello.board)
+			chosenPos = agent.choosePlay()
 		
 		chosenDir = currentPossiblePlays.playsList[chosenPos]
 		Othello.propagateChoose(chosenPos, chosenDir)
