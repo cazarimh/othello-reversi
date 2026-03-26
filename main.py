@@ -1,7 +1,7 @@
-from game.othello import Othello
+from gui import run
 
 def main():
-	Othello.startGame()
-	return
+    run()
 
-main()
+if __name__ == "__main__":
+    main()

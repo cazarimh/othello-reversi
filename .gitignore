@@ -4,3 +4,5 @@ __pycache__/
 
 # VS Code workspace settings
 .vscode/
+
+venv
