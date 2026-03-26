@@ -16,43 +16,43 @@ class Evaluation():
     for i in range(8):
       for j in range(8):
         if (board[i][j] == player):
-          positionalScore += Evaluation.scoreBoard[i][j]
+          positionalScore += Evaluation.scoreBoard[i][j].value
 
     if (board[0][0] == player):
-      if (board[1][1] == player): positionalScore += -h.X
-      if (board[0][1] == player): positionalScore += -h.C
-      if (board[0][2] == player): positionalScore += -h.A
-      if (board[0][3] == player): positionalScore += -h.B
-      if (board[1][0] == player): positionalScore += -h.C
-      if (board[2][0] == player): positionalScore += -h.A
-      if (board[3][0] == player): positionalScore += -h.B
+      if (board[1][1] == player): positionalScore += -h.X.value
+      if (board[0][1] == player): positionalScore += -h.C.value
+      if (board[0][2] == player): positionalScore += -h.A.value
+      if (board[0][3] == player): positionalScore += -h.B.value
+      if (board[1][0] == player): positionalScore += -h.C.value
+      if (board[2][0] == player): positionalScore += -h.A.value
+      if (board[3][0] == player): positionalScore += -h.B.value
 
     if (board[0][7] == player):
-      if (board[1][6] == player): positionalScore += -h.X
-      if (board[0][6] == player): positionalScore += -h.C
-      if (board[0][5] == player): positionalScore += -h.A
-      if (board[0][4] == player): positionalScore += -h.B
-      if (board[1][7] == player): positionalScore += -h.C
-      if (board[2][7] == player): positionalScore += -h.A
-      if (board[3][7] == player): positionalScore += -h.B
+      if (board[1][6] == player): positionalScore += -h.X.value
+      if (board[0][6] == player): positionalScore += -h.C.value
+      if (board[0][5] == player): positionalScore += -h.A.value
+      if (board[0][4] == player): positionalScore += -h.B.value
+      if (board[1][7] == player): positionalScore += -h.C.value
+      if (board[2][7] == player): positionalScore += -h.A.value
+      if (board[3][7] == player): positionalScore += -h.B.value
 
     if (board[7][0] == player):
-      if (board[6][1] == player): positionalScore += -h.X
-      if (board[6][0] == player): positionalScore += -h.C
-      if (board[5][0] == player): positionalScore += -h.A
-      if (board[4][0] == player): positionalScore += -h.B
-      if (board[7][1] == player): positionalScore += -h.C
-      if (board[7][2] == player): positionalScore += -h.A
-      if (board[7][3] == player): positionalScore += -h.B
+      if (board[6][1] == player): positionalScore += -h.X.value
+      if (board[6][0] == player): positionalScore += -h.C.value
+      if (board[5][0] == player): positionalScore += -h.A.value
+      if (board[4][0] == player): positionalScore += -h.B.value
+      if (board[7][1] == player): positionalScore += -h.C.value
+      if (board[7][2] == player): positionalScore += -h.A.value
+      if (board[7][3] == player): positionalScore += -h.B.value
 
     if (board[7][7] == player):
-      if (board[6][6] == player): positionalScore += -h.X
-      if (board[7][6] == player): positionalScore += -h.C
-      if (board[7][5] == player): positionalScore += -h.A
-      if (board[7][4] == player): positionalScore += -h.B
-      if (board[6][7] == player): positionalScore += -h.C
-      if (board[5][7] == player): positionalScore += -h.A
-      if (board[4][7] == player): positionalScore += -h.B
+      if (board[6][6] == player): positionalScore += -h.X.value
+      if (board[7][6] == player): positionalScore += -h.C.value
+      if (board[7][5] == player): positionalScore += -h.A.value
+      if (board[7][4] == player): positionalScore += -h.B.value
+      if (board[6][7] == player): positionalScore += -h.C.value
+      if (board[5][7] == player): positionalScore += -h.A.value
+      if (board[4][7] == player): positionalScore += -h.B.value
 
     return positionalScore / 0.88
 

@@ -39,7 +39,7 @@ class Directions():
 		]
 
 	def oppositeDirection(direction: Direction) -> Direction:
-		return Direction(direction.value[0]*-1, direction.value[1]*-1)
+		return Direction((direction.value[0]*-1, direction.value[1]*-1))
 
 	def oppositeDirections(directions: list[Direction]) -> list[Direction]:
 		return [Directions.oppositeDirection(direction) for direction in directions]

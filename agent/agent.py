@@ -1,6 +1,6 @@
 from game.utils import Player, Directions, PossiblePlays
+from agent.evaluation import Evaluation
 from agent.tree import Knot
-import numpy as np
 import time
 
 class Agent:
@@ -91,16 +91,29 @@ class Agent:
 		return newBoard
 	
 	def evaluateBoard(self, board: list[list[Player]]) -> int:
-		return np.random.randint(0, 100)
-
-
-
-
-
-
-
-
-
+		totalPieces = 0
+		for i in range(8):
+			for j in range(8):
+				if (board[i][j] != Player.EMPTY): totalPieces += 1
+		
+		if (totalPieces < 20):
+			return (
+				3 * Evaluation.hPositional(board, self.player) +
+				1.5 * Evaluation.hLoud(board, self.player) +
+				0.5 * Evaluation.hPieces(board, self.player)
+			)
+		elif (totalPieces < 40):
+			return (
+				2 * Evaluation.hPositional(board, self.player) +
+				1.5 * Evaluation.hLoud(board, self.player) +
+				1.5 * Evaluation.hPieces(board, self.player)
+			)
+		else:
+			return (
+				0.5 * Evaluation.hPositional(board, self.player) +
+				0.5 * Evaluation.hLoud(board, self.player) +
+				4 * Evaluation.hPieces(board, self.player)
+			)
 
 	def possiblePlays(self, board: list[list[Player]]) -> PossiblePlays:
 		plays = PossiblePlays()
