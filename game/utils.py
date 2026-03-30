@@ -13,7 +13,7 @@ class BoardHouses(Enum):
 	A = np.int8(-2)
 	B = np.int8(-1)
 	SIMPLE = np.int8(1)
-	DOUBLE = np.int8(2)
+	MIDDLE = np.int8(2)
 
 class Direction(Enum):
 	N = (-1, 0)

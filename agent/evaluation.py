@@ -1,14 +1,30 @@
 from game.utils import Player, Directions, Direction as d, BoardHouses as h
 
 class Evaluation():
-  scoreBoard = [[h.CORNER, h.C, h.A, h.B, h.B, h.A, h.C, h.CORNER],
+  __scoreBoard = [[h.CORNER, h.C, h.A, h.B, h.B, h.A, h.C, h.CORNER],
                 [h.C, h.X, h.SIMPLE, h.SIMPLE, h.SIMPLE, h.SIMPLE, h.X, h.C],
-                [h.A, h.SIMPLE, h.DOUBLE, h.DOUBLE, h.DOUBLE, h.DOUBLE, h.SIMPLE, h.A],
-                [h.B, h.SIMPLE, h.DOUBLE, h.DOUBLE, h.DOUBLE, h.DOUBLE, h.SIMPLE, h.B],
-                [h.B, h.SIMPLE, h.DOUBLE, h.DOUBLE, h.DOUBLE, h.DOUBLE, h.SIMPLE, h.B],
-                [h.A, h.SIMPLE, h.DOUBLE, h.DOUBLE, h.DOUBLE, h.DOUBLE, h.SIMPLE, h.A],
+                [h.A, h.SIMPLE, h.MIDDLE, h.MIDDLE, h.MIDDLE, h.MIDDLE, h.SIMPLE, h.A],
+                [h.B, h.SIMPLE, h.MIDDLE, h.MIDDLE, h.MIDDLE, h.MIDDLE, h.SIMPLE, h.B],
+                [h.B, h.SIMPLE, h.MIDDLE, h.MIDDLE, h.MIDDLE, h.MIDDLE, h.SIMPLE, h.B],
+                [h.A, h.SIMPLE, h.MIDDLE, h.MIDDLE, h.MIDDLE, h.MIDDLE, h.SIMPLE, h.A],
                 [h.C, h.X, h.SIMPLE, h.SIMPLE, h.SIMPLE, h.SIMPLE, h.X, h.C],
                 [h.CORNER, h.C, h.A, h.B, h.B, h.A, h.C, h.CORNER]]
+
+  __visited = [[False, False, False, False, False, False, False, False],
+             [False, False, False, False, False, False, False, False],
+             [False, False, False, False, False, False, False, False],
+             [False, False, False, False, False, False, False, False],
+             [False, False, False, False, False, False, False, False],
+             [False, False, False, False, False, False, False, False],
+             [False, False, False, False, False, False, False, False],
+             [False, False, False, False, False, False, False, False]]
+
+  __cornerExpansion = {
+    d.NW: {"directions": [d.S, d.SE, d.E], "limits": [(0, 0), (3, 3)]},
+    d.NE: {"directions": [d.S, d.SW, d.W], "limits": [(0, 4), (3, 7)]},
+    d.SE: {"directions": [d.N, d.NW, d.W], "limits": [(4, 4), (7, 7)]},
+    d.SW: {"directions": [d.N, d.NE, d.E], "limits": [(4, 0), (7, 3)]}
+  }
 
   @staticmethod
   def hPositional(board: list[list[Player]], player: Player) -> float:
@@ -16,45 +32,64 @@ class Evaluation():
     for i in range(8):
       for j in range(8):
         if (board[i][j] == player):
-          positionalScore += Evaluation.scoreBoard[i][j].value
-
-    if (board[0][0] == player):
-      if (board[1][1] == player): positionalScore += -h.X.value
-      if (board[0][1] == player): positionalScore += -h.C.value
-      if (board[0][2] == player): positionalScore += -h.A.value
-      if (board[0][3] == player): positionalScore += -h.B.value
-      if (board[1][0] == player): positionalScore += -h.C.value
-      if (board[2][0] == player): positionalScore += -h.A.value
-      if (board[3][0] == player): positionalScore += -h.B.value
-
-    if (board[0][7] == player):
-      if (board[1][6] == player): positionalScore += -h.X.value
-      if (board[0][6] == player): positionalScore += -h.C.value
-      if (board[0][5] == player): positionalScore += -h.A.value
-      if (board[0][4] == player): positionalScore += -h.B.value
-      if (board[1][7] == player): positionalScore += -h.C.value
-      if (board[2][7] == player): positionalScore += -h.A.value
-      if (board[3][7] == player): positionalScore += -h.B.value
-
-    if (board[7][0] == player):
-      if (board[6][1] == player): positionalScore += -h.X.value
-      if (board[6][0] == player): positionalScore += -h.C.value
-      if (board[5][0] == player): positionalScore += -h.A.value
-      if (board[4][0] == player): positionalScore += -h.B.value
-      if (board[7][1] == player): positionalScore += -h.C.value
-      if (board[7][2] == player): positionalScore += -h.A.value
-      if (board[7][3] == player): positionalScore += -h.B.value
-
-    if (board[7][7] == player):
-      if (board[6][6] == player): positionalScore += -h.X.value
-      if (board[7][6] == player): positionalScore += -h.C.value
-      if (board[7][5] == player): positionalScore += -h.A.value
-      if (board[7][4] == player): positionalScore += -h.B.value
-      if (board[6][7] == player): positionalScore += -h.C.value
-      if (board[5][7] == player): positionalScore += -h.A.value
-      if (board[4][7] == player): positionalScore += -h.B.value
+          positionalScore += Evaluation.__scoreBoard[i][j].value
 
     return positionalScore / 0.88
+
+  @staticmethod
+  def __initializeVisited():
+    Evaluation.__visited = [[False, False, False, False, False, False, False, False],
+                            [False, False, False, False, False, False, False, False],
+                            [False, False, False, False, False, False, False, False],
+                            [False, False, False, False, False, False, False, False],
+                            [False, False, False, False, False, False, False, False],
+                            [False, False, False, False, False, False, False, False],
+                            [False, False, False, False, False, False, False, False],
+                            [False, False, False, False, False, False, False, False]]
+
+  @staticmethod
+  def __expansion(curr: tuple[int, int], corner: d, board: list[list[Player]], player: Player) -> int:
+    i, j = curr
+    lowerLimit = Evaluation.__cornerExpansion[corner]["limits"][0]
+    upperLimit = Evaluation.__cornerExpansion[corner]["limits"][1]
+    if (i < lowerLimit[0] or i > upperLimit[0]): return 0
+    if (j < lowerLimit[1] or j > upperLimit[1]): return 0
+    if (Evaluation.__visited[i][j]): return 0
+
+    Evaluation.__visited[i][j] = True
+    if (board[i][j] != player): return 0
+
+    expandDirections = Evaluation.__cornerExpansion[corner]["directions"]
+    nextExpansions = Directions.nextPositions(curr, expandDirections)
+
+    stability = 1
+    stability += Evaluation.__expansion(nextExpansions[0], corner, board, player)
+    stability += Evaluation.__expansion(nextExpansions[1], corner, board, player)
+    stability += Evaluation.__expansion(nextExpansions[2], corner, board, player)
+    return stability
+
+  @staticmethod
+  def hStability(board: list[list[Player]], player: Player) -> float:
+    Evaluation.__initializeVisited()
+
+    stabilityScore = 0
+
+    stabilityScore += Evaluation.__expansion((0, 0), d.NW, board, player)
+    stabilityScore += Evaluation.__expansion((0, 7), d.NE, board, player)
+    stabilityScore += Evaluation.__expansion((7, 7), d.SE, board, player)
+    stabilityScore += Evaluation.__expansion((7, 0), d.SW, board, player)
+
+    return stabilityScore / 0.64
+
+  @staticmethod
+  def hCorner(board: list[list[Player]], player: Player) -> float:
+    corners = 0
+    if (board[0][0] == player): corners += 1
+    if (board[0][7] == player): corners += 1
+    if (board[7][7] == player): corners += 1
+    if (board[7][0] == player): corners += 1
+
+    return corners * 25
 
   @staticmethod
   def hLoud(board: list[list[Player]], player: Player) -> float:
@@ -74,7 +109,7 @@ class Evaluation():
                   (board[n][m] != Player.EMPTY and board[p][q] == Player.EMPTY)):
                 frontierPieces += 1
 
-    return frontierPieces / 0.64
+    return frontierPieces / 0.36
 
   @staticmethod
   def hPieces(board: list[list[Player]], player: Player) -> float:
@@ -84,4 +119,4 @@ class Evaluation():
         if (board[i][j] == player):
           playerPieces += 1
 
-    return playerPieces
+    return playerPieces / 0.64

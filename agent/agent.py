@@ -22,11 +22,11 @@ class Agent:
 		
 		root = Knot(board, 0, None, 0)
 		queue = [root]
-		while len(queue) > 0 and time.time() - start < 0.5: 
+		while len(queue) > 0 and time.time() - start < 0.95: 
 			knot = queue.pop(0)
 			isMaximizing = knot.depth % 2 == 0
 			
-			possiblePlays = self.possiblePlays(board=knot.board)
+			possiblePlays = Agent.possiblePlays(knot.board, self.player,  self.opponent)
 			if not possiblePlays.hasPossiblePlays:
 				continue
 			
@@ -96,35 +96,55 @@ class Agent:
 			for j in range(8):
 				if (board[i][j] != Player.EMPTY): totalPieces += 1
 		
+		positional = Evaluation.hPositional(board, self.player) - Evaluation.hPositional(board, self.opponent)
+		stability = Evaluation.hStability(board, self.player) - Evaluation.hStability(board, self.opponent)
+		frontier = Evaluation.hLoud(board, self.opponent) - Evaluation.hLoud(board, self.player)
+		corner = Evaluation.hCorner(board, self.player) - Evaluation.hCorner(board, self.opponent)
+		pieces = Evaluation.hPieces(board, self.player) - Evaluation.hPieces(board, self.opponent)
+		mobility = len(Agent.possiblePlays(board, self.player, self.opponent).playsList.keys()) - len(Agent.possiblePlays(board, self.player, self.opponent).playsList.keys())
+		
 		if (totalPieces < 20):
 			return (
-				3 * Evaluation.hPositional(board, self.player) +
-				1.5 * Evaluation.hLoud(board, self.player) +
-				0.5 * Evaluation.hPieces(board, self.player)
+				(
+					4 * positional +
+					1 * stability +
+					2 * frontier +
+					3 * corner +
+					4 * mobility
+				) / 14
 			)
-		elif (totalPieces < 40):
+		elif (totalPieces < 52):
 			return (
-				2 * Evaluation.hPositional(board, self.player) +
-				1.5 * Evaluation.hLoud(board, self.player) +
-				1.5 * Evaluation.hPieces(board, self.player)
+				(
+					2 * positional +
+					5 * stability +
+					2 * frontier +
+					6 * corner +
+					2 * pieces +
+					4 * mobility
+				) / 21
 			)
 		else:
 			return (
-				0.5 * Evaluation.hPositional(board, self.player) +
-				0.5 * Evaluation.hLoud(board, self.player) +
-				4 * Evaluation.hPieces(board, self.player)
+				(
+					2 * stability +
+					1 * frontier +
+					8 * pieces +
+					2 * mobility
+				) / 13
 			)
 
-	def possiblePlays(self, board: list[list[Player]]) -> PossiblePlays:
+	@staticmethod
+	def possiblePlays(board: list[list[Player]], player: Player, opponent: Player) -> PossiblePlays:
 		plays = PossiblePlays()
 
 		for i in range(len(board)):
 			for j in range(len(board[i])):
 				if board[i][j] == Player.EMPTY:
-					oppDirections = self.searchOpponent((i, j), board)
+					oppDirections = Agent.searchOpponent((i, j), board, opponent)
 					if len(oppDirections) > 0:
 						for direction in oppDirections:
-							if self.foundMyDisc((i, j), direction, board):
+							if Agent.foundMyDisc((i, j), direction, board, player, opponent):
 								try:
 									plays.playsList[(i, j)].add(direction)
 								except KeyError:
@@ -134,17 +154,19 @@ class Agent:
 			plays.hasPossiblePlays = True
 		return plays
 
-	def searchOpponent(self, startPos: tuple[int, int], board: list[list[Player]]) -> list[Directions]:
+	@staticmethod
+	def searchOpponent(startPos: tuple[int, int], board: list[list[Player]], opponent: Player) -> list[Directions]:
 		foundDirections = []
 		for direction in Directions.getAllDirections():
 			(i, j) = Directions.nextPosition(startPos, direction)
 			if (i >= 0 and j >= 0 and i < 8 and j < 8):
-				if (board[i][j] == self.opponent): foundDirections.append(direction)
+				if (board[i][j] == opponent): foundDirections.append(direction)
 		return foundDirections
 	
-	def foundMyDisc(self, startPos: tuple[int, int], direction: Directions, board: list[list[Player]]) -> bool:
+	@staticmethod
+	def foundMyDisc(startPos: tuple[int, int], direction: Directions, board: list[list[Player]], player: Player, opponent: Player) -> bool:
 		(i, j) = Directions.nextPosition(startPos, direction)
 		if (i >= 0 and j >= 0 and i < 8 and j < 8):
-			if (board[i][j] == self.opponent): return self.foundMyDisc((i, j), direction, board)
-			elif (board[i][j] == self.player): return True
+			if (board[i][j] == opponent): return Agent.foundMyDisc((i, j), direction, board, player, opponent)
+			elif (board[i][j] == player): return True
 		return False

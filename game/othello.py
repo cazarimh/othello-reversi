@@ -1,7 +1,7 @@
 from game.utils import Player, Direction, Directions, PossiblePlays
-import numpy as np
-
 from agent.agent import Agent
+import numpy as np
+import time
 
 
 class Othello:
