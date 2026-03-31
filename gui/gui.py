@@ -176,9 +176,6 @@ class OthelloGUI:
             agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.95, simpleAgent=True)
 
         try:
-            root, _, _ = agent.buildDecisionTree(Othello.board)
-            print(f'Minimax score: {agent.minimax(root, True)}, AlphaBeta score: {agent.alphabeta(root, float("-inf"), float("+inf"), True)}')
-
             chosen = agent.choosePlay()
         except Exception:
             chosen = list(plays.playsList.keys())[0]
@@ -256,6 +253,7 @@ class OthelloGUI:
         self.update_board()
 
         if Othello.winner != Player.EMPTY:
+            print(f'{Othello.winner.name} wins!')
             messagebox.showinfo(
                 "Game Over",
                 f"{Othello.winner.name} wins! "
@@ -263,6 +261,7 @@ class OthelloGUI:
                 f"{Othello.score[Othello.loser.name]}"
             )
         else:
+            print(f'Tie!')
             messagebox.showinfo(
                 "Game Over",
                 f"Tie! {Othello.score['BLACK']}:{Othello.score['WHITE']}"

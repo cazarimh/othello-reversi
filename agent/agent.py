@@ -13,24 +13,27 @@ class Agent:
 		self.simpleAgent = simpleAgent
 
 	def choosePlay(self):
+		print(f'{self.player.name} playing')
+	
 		bfBuildTree = time.time()
 		root, knotsExpanded, maxDepth = self.buildDecisionTree(self.initialBoard)
 		afBuildTree = time.time()
 		print(f'Time spent at BuildDecisionTree: {afBuildTree - bfBuildTree}, {knotsExpanded} knots explored, {maxDepth} max depth')
 
-		if (self.simpleAgent):
-			bfMinimax = time.time()
-			score = self.minimax(root, True)
-			afMinimax = time.time()
-			print(f'Time spent at Minimax: {afMinimax- bfMinimax}\n')
-		else:
-			bfAlphaBeta = time.time()
-			score = self.alphabeta(root, float("-inf"), float("+inf"), True)
-			afAlphaBeta = time.time()
-			print(f'Time spent at AlphaBeta: {afAlphaBeta- bfAlphaBeta}\n')
+		bfMinimax = time.time()
+		minimaxScore = self.minimax(root, True)
+		afMinimax = time.time()
+		print(f'Time spent at Minimax: {afMinimax- bfMinimax}')
+
+		bfAlphaBeta = time.time()
+		alphaBetaScore = self.alphabeta(root, float("-inf"), float("+inf"), True)
+		afAlphaBeta = time.time()
+		print(f'Time spent at AlphaBeta: {afAlphaBeta- bfAlphaBeta}')
+
+		print(f'Minimax score: {minimaxScore}, AlphaBeta score: {alphaBetaScore}\n')
 
 		for child in root.children:
-			if child.score == score:
+			if child.score == alphaBetaScore:
 				return child.pos
 
 	def buildDecisionTree(self, board: list[list[Player]]) -> tuple[Knot, int, int]:
