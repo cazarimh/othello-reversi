@@ -1,0 +1,361 @@
+BLACK playing
+Time spent at BuildDecisionTree: 0.959270715713501, 59 knots explored, 3 max depth
+Time spent at Minimax: 0.00012087821960449219
+Time spent at AlphaBeta: 5.7220458984375e-05
+Minimax score: 0.375, AlphaBeta score: 0.375
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7501327991485596, 36 knots explored, 3 max depth
+Time spent at Minimax: 0.00013303756713867188
+Time spent at AlphaBeta: 6.508827209472656e-05
+Minimax score: 0.026785714285714284, AlphaBeta score: 0.026785714285714284
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9571774005889893, 47 knots explored, 3 max depth
+Time spent at Minimax: 0.00011801719665527344
+Time spent at AlphaBeta: 3.528594970703125e-05
+Minimax score: 0.3, AlphaBeta score: 0.3
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7603962421417236, 36 knots explored, 2 max depth
+Time spent at Minimax: 9.751319885253906e-05
+Time spent at AlphaBeta: 3.0040740966796875e-05
+Minimax score: 0.0390625, AlphaBeta score: 0.0390625
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.956127405166626, 38 knots explored, 3 max depth
+Time spent at Minimax: 0.00010967254638671875
+Time spent at AlphaBeta: 3.266334533691406e-05
+Minimax score: 0.25, AlphaBeta score: 0.25
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7650406360626221, 33 knots explored, 2 max depth
+Time spent at Minimax: 0.00010204315185546875
+Time spent at AlphaBeta: 3.814697265625e-05
+Minimax score: 0.04910191857600394, AlphaBeta score: 0.04910191857600394
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9669609069824219, 37 knots explored, 3 max depth
+Time spent at Minimax: 0.00011181831359863281
+Time spent at AlphaBeta: 3.933906555175781e-05
+Minimax score: 0.35714285714285715, AlphaBeta score: 0.35714285714285715
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7549405097961426, 27 knots explored, 2 max depth
+Time spent at Minimax: 8.797645568847656e-05
+Time spent at AlphaBeta: 3.600120544433594e-05
+Minimax score: 0.10581467661691543, AlphaBeta score: 0.10581467661691543
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9810426235198975, 34 knots explored, 2 max depth
+Time spent at Minimax: 0.00014400482177734375
+Time spent at AlphaBeta: 2.5510787963867188e-05
+Minimax score: 0.1875, AlphaBeta score: 0.1875
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7827732563018799, 29 knots explored, 2 max depth
+Time spent at Minimax: 9.107589721679688e-05
+Time spent at AlphaBeta: 3.337860107421875e-05
+Minimax score: 0.15720409292035398, AlphaBeta score: 0.15720409292035398
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9795434474945068, 38 knots explored, 3 max depth
+Time spent at Minimax: 0.00011730194091796875
+Time spent at AlphaBeta: 3.790855407714844e-05
+Minimax score: 0.16666666666666666, AlphaBeta score: 0.16666666666666666
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7687768936157227, 25 knots explored, 2 max depth
+Time spent at Minimax: 9.417533874511719e-05
+Time spent at AlphaBeta: 3.409385681152344e-05
+Minimax score: 0.017045454545454544, AlphaBeta score: 0.017045454545454544
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9798722267150879, 29 knots explored, 2 max depth
+Time spent at Minimax: 0.00011134147644042969
+Time spent at AlphaBeta: 3.123283386230469e-05
+Minimax score: 0.35, AlphaBeta score: 0.35
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7626819610595703, 18 knots explored, 2 max depth
+Time spent at Minimax: 0.00010204315185546875
+Time spent at AlphaBeta: 3.24249267578125e-05
+Minimax score: 0.0203785461849978, AlphaBeta score: 0.0203785461849978
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9926342964172363, 23 knots explored, 2 max depth
+Time spent at Minimax: 0.0001201629638671875
+Time spent at AlphaBeta: 3.7670135498046875e-05
+Minimax score: 0.09523809523809523, AlphaBeta score: 0.09523809523809523
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7576649188995361, 17 knots explored, 2 max depth
+Time spent at Minimax: 0.0001049041748046875
+Time spent at AlphaBeta: 2.7179718017578125e-05
+Minimax score: 0.03725166838771327, AlphaBeta score: 0.03725166838771327
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9594137668609619, 23 knots explored, 2 max depth
+Time spent at Minimax: 0.00010776519775390625
+Time spent at AlphaBeta: 3.314018249511719e-05
+Minimax score: 0.20833333333333334, AlphaBeta score: 0.20833333333333334
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7685756683349609, 16 knots explored, 2 max depth
+Time spent at Minimax: 9.179115295410156e-05
+Time spent at AlphaBeta: 3.123283386230469e-05
+Minimax score: 0.047099484955272435, AlphaBeta score: 0.047099484955272435
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9855432510375977, 22 knots explored, 2 max depth
+Time spent at Minimax: 0.00012445449829101562
+Time spent at AlphaBeta: 3.528594970703125e-05
+Minimax score: 0.08, AlphaBeta score: 0.08
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7936532497406006, 20 knots explored, 2 max depth
+Time spent at Minimax: 8.988380432128906e-05
+Time spent at AlphaBeta: 3.7670135498046875e-05
+Minimax score: 0.03782346685572492, AlphaBeta score: 0.03782346685572492
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.953021764755249, 19 knots explored, 2 max depth
+Time spent at Minimax: 0.00013828277587890625
+Time spent at AlphaBeta: 3.170967102050781e-05
+Minimax score: 0.14814814814814814, AlphaBeta score: 0.14814814814814814
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.790520191192627, 19 knots explored, 2 max depth
+Time spent at Minimax: 8.988380432128906e-05
+Time spent at AlphaBeta: 2.765655517578125e-05
+Minimax score: 0.027295149517306334, AlphaBeta score: 0.027295149517306334
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9793195724487305, 21 knots explored, 2 max depth
+Time spent at Minimax: 0.00012373924255371094
+Time spent at AlphaBeta: 2.86102294921875e-05
+Minimax score: 0.43333333333333335, AlphaBeta score: 0.43333333333333335
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7727141380310059, 17 knots explored, 2 max depth
+Time spent at Minimax: 9.417533874511719e-05
+Time spent at AlphaBeta: 2.7179718017578125e-05
+Minimax score: 0.028345059836379183, AlphaBeta score: 0.028345059836379183
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9615941047668457, 25 knots explored, 2 max depth
+Time spent at Minimax: 0.0001270771026611328
+Time spent at AlphaBeta: 3.0279159545898438e-05
+Minimax score: 0.40625, AlphaBeta score: 0.40625
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7718105316162109, 22 knots explored, 2 max depth
+Time spent at Minimax: 8.749961853027344e-05
+Time spent at AlphaBeta: 3.409385681152344e-05
+Minimax score: 0.057336818859658516, AlphaBeta score: 0.057336818859658516
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9783926010131836, 29 knots explored, 2 max depth
+Time spent at Minimax: 0.0001239776611328125
+Time spent at AlphaBeta: 3.504753112792969e-05
+Minimax score: 0.38235294117647056, AlphaBeta score: 0.38235294117647056
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7809720039367676, 22 knots explored, 2 max depth
+Time spent at Minimax: 8.7738037109375e-05
+Time spent at AlphaBeta: 3.5762786865234375e-05
+Minimax score: 0.07057494339484274, AlphaBeta score: 0.07057494339484274
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9591679573059082, 30 knots explored, 2 max depth
+Time spent at Minimax: 0.00012373924255371094
+Time spent at AlphaBeta: 3.075599670410156e-05
+Minimax score: 0.4166666666666667, AlphaBeta score: 0.4166666666666667
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7778379917144775, 24 knots explored, 2 max depth
+Time spent at Minimax: 9.918212890625e-05
+Time spent at AlphaBeta: 3.5762786865234375e-05
+Minimax score: 0.06895974315329154, AlphaBeta score: 0.06895974315329154
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9813220500946045, 31 knots explored, 2 max depth
+Time spent at Minimax: 0.00015497207641601562
+Time spent at AlphaBeta: 5.245208740234375e-05
+Minimax score: 0.5, AlphaBeta score: 0.5
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7725613117218018, 24 knots explored, 2 max depth
+Time spent at Minimax: 9.393692016601562e-05
+Time spent at AlphaBeta: 3.62396240234375e-05
+Minimax score: 0.03415354910411337, AlphaBeta score: 0.03415354910411337
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9500117301940918, 36 knots explored, 2 max depth
+Time spent at Minimax: 0.00012040138244628906
+Time spent at AlphaBeta: 3.5762786865234375e-05
+Minimax score: 0.475, AlphaBeta score: 0.475
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7678735256195068, 24 knots explored, 2 max depth
+Time spent at Minimax: 9.036064147949219e-05
+Time spent at AlphaBeta: 3.8623809814453125e-05
+Minimax score: 0.4820322883939833, AlphaBeta score: 0.4820322883939833
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.961050271987915, 42 knots explored, 2 max depth
+Time spent at Minimax: 0.00012230873107910156
+Time spent at AlphaBeta: 4.076957702636719e-05
+Minimax score: 0.40476190476190477, AlphaBeta score: 0.40476190476190477
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7537388801574707, 26 knots explored, 2 max depth
+Time spent at Minimax: 9.298324584960938e-05
+Time spent at AlphaBeta: 2.86102294921875e-05
+Minimax score: 0.4628356097555211, AlphaBeta score: 0.4628356097555211
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9551260471343994, 44 knots explored, 3 max depth
+Time spent at Minimax: 0.000125885009765625
+Time spent at AlphaBeta: 5.7697296142578125e-05
+Minimax score: 0.29545454545454547, AlphaBeta score: 0.29545454545454547
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7619502544403076, 28 knots explored, 2 max depth
+Time spent at Minimax: 0.00010228157043457031
+Time spent at AlphaBeta: 4.601478576660156e-05
+Minimax score: 0.4791532129055848, AlphaBeta score: 0.4791532129055848
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.954139232635498, 46 knots explored, 3 max depth
+Time spent at Minimax: 0.00013446807861328125
+Time spent at AlphaBeta: 5.841255187988281e-05
+Minimax score: 0.06521739130434782, AlphaBeta score: 0.06521739130434782
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7557048797607422, 29 knots explored, 2 max depth
+Time spent at Minimax: 9.274482727050781e-05
+Time spent at AlphaBeta: 5.221366882324219e-05
+Minimax score: 0.5227890779930987, AlphaBeta score: 0.5227890779930987
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9816460609436035, 45 knots explored, 3 max depth
+Time spent at Minimax: 0.0001468658447265625
+Time spent at AlphaBeta: 4.673004150390625e-05
+Minimax score: -0.020833333333333332, AlphaBeta score: -0.020833333333333332
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7681131362915039, 29 knots explored, 2 max depth
+Time spent at Minimax: 9.34600830078125e-05
+Time spent at AlphaBeta: 4.57763671875e-05
+Minimax score: 0.6965739410561143, AlphaBeta score: 0.6965739410561143
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9800195693969727, 37 knots explored, 3 max depth
+Time spent at Minimax: 0.00013184547424316406
+Time spent at AlphaBeta: 6.771087646484375e-05
+Minimax score: -0.27450980392156865, AlphaBeta score: -0.27450980392156865
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7582955360412598, 29 knots explored, 2 max depth
+Time spent at Minimax: 0.00010466575622558594
+Time spent at AlphaBeta: 7.390975952148438e-05
+Minimax score: 0.6932953826691967, AlphaBeta score: 0.6932953826691967
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9548768997192383, 46 knots explored, 3 max depth
+Time spent at Minimax: 0.0001316070556640625
+Time spent at AlphaBeta: 5.745887756347656e-05
+Minimax score: -0.057692307692307696, AlphaBeta score: -0.057692307692307696
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7618498802185059, 31 knots explored, 2 max depth
+Time spent at Minimax: 0.00010013580322265625
+Time spent at AlphaBeta: 5.340576171875e-05
+Minimax score: 0.733203394582405, AlphaBeta score: 0.733203394582405
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9715304374694824, 53 knots explored, 3 max depth
+Time spent at Minimax: 0.00015425682067871094
+Time spent at AlphaBeta: 6.818771362304688e-05
+Minimax score: -0.018518518518518517, AlphaBeta score: -0.018518518518518517
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.756105899810791, 43 knots explored, 3 max depth
+Time spent at Minimax: 0.00010728836059570312
+Time spent at AlphaBeta: 5.2928924560546875e-05
+Minimax score: 0.5350400833734167, AlphaBeta score: 0.5350400833734167
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9606354236602783, 56 knots explored, 4 max depth
+Time spent at Minimax: 0.000141143798828125
+Time spent at AlphaBeta: 5.4836273193359375e-05
+Minimax score: -0.21052631578947367, AlphaBeta score: -0.21052631578947367
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.750807523727417, 38 knots explored, 3 max depth
+Time spent at Minimax: 0.00010800361633300781
+Time spent at AlphaBeta: 4.124641418457031e-05
+Minimax score: 0.5014507422402159, AlphaBeta score: 0.5014507422402159
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9636955261230469, 60 knots explored, 3 max depth
+Time spent at Minimax: 0.00013256072998046875
+Time spent at AlphaBeta: 7.081031799316406e-05
+Minimax score: -0.25862068965517243, AlphaBeta score: -0.25862068965517243
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.758744478225708, 47 knots explored, 3 max depth
+Time spent at Minimax: 0.00010037422180175781
+Time spent at AlphaBeta: 4.2438507080078125e-05
+Minimax score: 0.5208968213205502, AlphaBeta score: 0.5208968213205502
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.9609248638153076, 72 knots explored, 3 max depth
+Time spent at Minimax: 0.0001590251922607422
+Time spent at AlphaBeta: 3.790855407714844e-05
+Minimax score: -0.4262295081967213, AlphaBeta score: -0.4262295081967213
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.7556624412536621, 78 knots explored, 3 max depth
+Time spent at Minimax: 0.00012111663818359375
+Time spent at AlphaBeta: 5.316734313964844e-05
+Minimax score: 0.5302520082596761, AlphaBeta score: 0.5302520082596761
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.6519203186035156, 198 knots explored, 8 max depth
+Time spent at Minimax: 0.00012993812561035156
+Time spent at AlphaBeta: 6.604194641113281e-05
+Minimax score: -0.4, AlphaBeta score: -0.4
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.3265705108642578, 52 knots explored, 3 max depth
+Time spent at Minimax: 5.841255187988281e-05
+Time spent at AlphaBeta: 3.0040740966796875e-05
+Minimax score: 0.4639583333333333, AlphaBeta score: 0.4639583333333333
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.152113676071167, 46 knots explored, 5 max depth
+Time spent at Minimax: 3.600120544433594e-05
+Time spent at AlphaBeta: 2.765655517578125e-05
+Minimax score: -0.4, AlphaBeta score: -0.4
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.03997468948364258, 10 knots explored, 3 max depth
+Time spent at Minimax: 5.054473876953125e-05
+Time spent at AlphaBeta: 8.821487426757812e-06
+Minimax score: 0.5568992248062016, AlphaBeta score: 0.5568992248062016
+
+BLACK playing
+Time spent at BuildDecisionTree: 0.0168612003326416, 4 knots explored, 3 max depth
+Time spent at Minimax: 6.9141387939453125e-06
+Time spent at AlphaBeta: 5.0067901611328125e-06
+Minimax score: -0.4, AlphaBeta score: -0.4
+
+WHITE playing
+Time spent at BuildDecisionTree: 0.017123937606811523, 3 knots explored, 2 max depth
+Time spent at Minimax: 5.9604644775390625e-06
+Time spent at AlphaBeta: 3.814697265625e-06
+Minimax score: 0.5568992248062016, AlphaBeta score: 0.5568992248062016
+
+WHITE wins!
