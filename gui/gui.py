@@ -169,12 +169,16 @@ class OthelloGUI:
             self.root.after(0, self.handle_ai_pass)
             return
 
-        if (Othello.turn == Player.BLACK):
-            agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.95, depthLimit=4)
-        else:
-            agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.95)
+        if (self.white_is_computer and Othello.turn == Player.WHITE):
+            agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.75, depthLimit=4)
+
+        if (self.black_is_computer and Othello.turn == Player.BLACK):
+            agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.95, simpleAgent=True)
 
         try:
+            root, _, _ = agent.buildDecisionTree(Othello.board)
+            print(f'Minimax score: {agent.minimax(root, True)}, AlphaBeta score: {agent.alphabeta(root, float("-inf"), float("+inf"), True)}')
+
             chosen = agent.choosePlay()
         except Exception:
             chosen = list(plays.playsList.keys())[0]

@@ -4,28 +4,46 @@ from agent.tree import Knot
 import time
 
 class Agent:
-	def __init__(self, player: Player, opponent: Player, initialBoard: list[list[Player]], timeLimit: float = 0.95, depthLimit: int = 100):
+	def __init__(self, player: Player, opponent: Player, initialBoard: list[list[Player]], timeLimit: float = 0.95, depthLimit: int = 100, simpleAgent: bool = False):
 		self.player = player
 		self.opponent = opponent
 		self.initialBoard = initialBoard
 		self.timeLimit = timeLimit
 		self.depthLimit = depthLimit
+		self.simpleAgent = simpleAgent
 
 	def choosePlay(self):
-		root = self.buildDecisionTree(self.initialBoard)
-		score = self.alphabeta(root, float("-inf"), float("+inf"), True)
+		bfBuildTree = time.time()
+		root, knotsExpanded, maxDepth = self.buildDecisionTree(self.initialBoard)
+		afBuildTree = time.time()
+		print(f'Time spent at BuildDecisionTree: {afBuildTree - bfBuildTree}, {knotsExpanded} knots explored, {maxDepth} max depth')
+
+		if (self.simpleAgent):
+			bfMinimax = time.time()
+			score = self.minimax(root, True)
+			afMinimax = time.time()
+			print(f'Time spent at Minimax: {afMinimax- bfMinimax}\n')
+		else:
+			bfAlphaBeta = time.time()
+			score = self.alphabeta(root, float("-inf"), float("+inf"), True)
+			afAlphaBeta = time.time()
+			print(f'Time spent at AlphaBeta: {afAlphaBeta- bfAlphaBeta}\n')
 
 		for child in root.children:
 			if child.score == score:
 				return child.pos
 
-	def buildDecisionTree(self, board: list[list[Player]]) -> Knot:
+	def buildDecisionTree(self, board: list[list[Player]]) -> tuple[Knot, int, int]:
 		start = time.time()
+		knotsExpanded = 0
+		maxDepth = 0
 		
 		root = Knot(board, 0, None, 0)
 		queue = [root]
 		while len(queue) > 0 and time.time() - start < self.timeLimit: 
 			knot = queue.pop(0)
+			knotsExpanded += 1
+			maxDepth = max(maxDepth, knot.depth)
 			isMaximizing = knot.depth % 2 == 0
 			player = self.player if isMaximizing else self.opponent
 			
@@ -51,7 +69,29 @@ class Agent:
 			if (knot.depth + 1 < self.depthLimit):
 				queue.extend(knot.children)
 
-		return root
+		return root, knotsExpanded, maxDepth
+	
+	def minimax(self, knot: Knot, isMaximizing: bool):
+		if knot.isLeaf():
+			return knot.score
+
+		if isMaximizing:
+			maxScore = float("-inf")
+			for child in knot.children:
+				childScore = self.minimax(child, not isMaximizing)
+				maxScore = max(maxScore, childScore)
+
+			knot.score = maxScore
+
+		else:
+			minScore = float("+inf")
+			for child in knot.children:
+				childScore = self.minimax(child, not isMaximizing)
+				minScore = min(minScore, childScore)
+
+			knot.score = minScore
+		
+		return knot.score
 	
 	def alphabeta(self, knot: Knot, alpha: float, beta: float, isMaximizing: bool):
 		if knot.isLeaf():
@@ -111,6 +151,9 @@ class Agent:
 		corner = Evaluation.normalize(Evaluation.hCorner(board, self.player), Evaluation.hCorner(board, self.opponent))
 		pieces = Evaluation.normalize(Evaluation.hPieces(board, self.player), Evaluation.hPieces(board, self.opponent))
 		mobility = Evaluation.normalize(len(Agent.possiblePlays(board, self.player).playsList.keys()), len(Agent.possiblePlays(board, self.opponent).playsList.keys()))
+
+		if (self.simpleAgent):
+			return pieces
 		
 		if (totalPieces < 20):
 			return (

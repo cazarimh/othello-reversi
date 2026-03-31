@@ -1,4 +1,4 @@
-from gui import run
+from gui.gui import run
 
 def main():
     run()
