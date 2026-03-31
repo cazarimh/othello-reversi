@@ -169,7 +169,10 @@ class OthelloGUI:
             self.root.after(0, self.handle_ai_pass)
             return
 
-        agent = Agent(Othello.turn, Othello.opponent, Othello.board)
+        if (Othello.turn == Player.BLACK):
+            agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.95, depthLimit=4)
+        else:
+            agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.95)
 
         try:
             chosen = agent.choosePlay()
@@ -190,9 +193,6 @@ class OthelloGUI:
         self.consecutive_passes = 0
 
         self.after_move_cleanup()
-
-        if self.current_player_is_ai():
-            self.root.after(AI_DELAY_MS, self.perform_ai_move)
 
     def handle_ai_pass(self):
         self.ai_pending = False
@@ -220,6 +220,7 @@ class OthelloGUI:
             self.finish_game()
             return
 
+        Othello.changeTurn()
         plays = Othello.possiblePlays()
 
         if not plays.hasPossiblePlays:
@@ -241,8 +242,7 @@ class OthelloGUI:
 
         else:
             self.consecutive_passes = 0
-
-        Othello.changeTurn()
+        
         self.update_board()
 
         if self.current_player_is_ai():
