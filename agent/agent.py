@@ -238,37 +238,34 @@ class Agent:
 
 		elif (self.simpleAgent):
 			return (
-					positional +
-					stability +
-					frontier +
-					5 * corner +
-					5 * pieces +
-					mobility
-				)
+				3 * positional +
+				2 * stability +
+				1 * frontier +
+				5 * corner +
+				3 * pieces +
+				5 * mobility
+			)
 
 		else:
 			if (totalPieces < 20):
 				return (
-						10 * positional +
-						1 * stability +
-						2 * frontier +
-						5 * mobility
+						8 * mobility +
+						6 * positional +
+						3 * frontier
 				)
 			elif (totalPieces < 54):
 				return (
+						10 * corner +
+						6 * mobility +
+						4 * stability +
 						2 * positional +
-						3 * stability +
-						1 * frontier +
-						20 * corner +
-						10 * pieces +
-						5 * mobility
+						1 * frontier
 				)
 			else:
 				return (
-						1 * stability +
-						1 * frontier +
-						5 * corner +
 						10 * pieces +
+						6 * corner +
+						3 * stability +
 						1 * mobility
 				)
 

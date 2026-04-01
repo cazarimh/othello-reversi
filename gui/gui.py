@@ -24,8 +24,11 @@ class OthelloGUI:
 
         tk.Label(controls, text="Modo:").pack(side='left')
         tk.Radiobutton(controls, text="Pessoa x Pessoa", variable=self.mode, value=1).pack(side='left')
-        tk.Radiobutton(controls, text="Pessoa(preto) x Agente", variable=self.mode, value=2).pack(side='left')
+        tk.Radiobutton(controls, text="Pessoa x Agente", variable=self.mode, value=2).pack(side='left')
         tk.Radiobutton(controls, text="Agente x Agente", variable=self.mode, value=3).pack(side='left')
+        tk.Radiobutton(controls, text="Agente (Minimax) x Agente (Alphabeta)", variable=self.mode, value=4).pack(side='left')
+        tk.Radiobutton(controls, text="Agente (Simples) x Agente", variable=self.mode, value=5).pack(side='left')
+        tk.Radiobutton(controls, text="Agente (Baseline) x Agente", variable=self.mode, value=3).pack(side='left')
 
         tk.Button(controls, text="Novo Jogo", command=self.start_new_game).pack(side='left', padx=8)
 
@@ -191,14 +194,14 @@ class OthelloGUI:
 
         elif mode == 5: # Simples x Agente
             if (self.black_is_computer and Othello.turn == Player.BLACK):
-                agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.75, simpleAgent=True)
+                agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.75, depthLimit=4, simpleAgent=True)
         
             if (self.white_is_computer and Othello.turn == Player.WHITE):
                 agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.75, depthLimit=4)
 
         elif mode == 6: # Baseline x Agente
             if (self.black_is_computer and Othello.turn == Player.BLACK):
-                agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.75, baselineAgent=True)
+                agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.75, depthLimit=4, baselineAgent=True)
         
             if (self.white_is_computer and Othello.turn == Player.WHITE):
                 agent = Agent(Othello.turn, Othello.opponent, Othello.board, timeLimit=0.75, depthLimit=4)
