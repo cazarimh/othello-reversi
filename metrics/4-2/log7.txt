@@ -1,0 +1,1029 @@
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.018997669219970703s
+5 nodes expanded and 0 nodes pruned
+Found 3.0464071856287425 score for (2, 3) move
+AlphaBeta:
+Depth 2 completed in 0.06446576118469238s
+13 nodes expanded and 4 nodes pruned
+Found -0.33333333333333337 score for (3, 2) move
+AlphaBeta:
+Depth 3 completed in 0.2706122398376465s
+73 nodes expanded and 0 nodes pruned
+Found 3.7422135045173563 score for (3, 2) move
+AlphaBeta:
+Depth 4 completed in 0.40012645721435547s
+54 nodes expanded and 41 nodes pruned
+Found -2.2412587412587412 score for (3, 2) move
+Time spent at Iterative Deepening: 0.7753596305847168, (3, 2) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.015557527542114258s
+4 nodes expanded and 0 nodes pruned
+Found 0.30000000000000004 score for (2, 2) move
+AlphaBeta:
+Depth 2 completed in 0.06186032295227051s
+14 nodes expanded and 4 nodes pruned
+Found -3.8292988039065072 score for (4, 2) move
+AlphaBeta:
+Depth 3 completed in 0.25447583198547363s
+41 nodes expanded and 29 nodes pruned
+Found 0.9705128205128205 score for (4, 2) move
+AlphaBeta:
+Depth 4 completed in 0.4252035617828369s
+52 nodes expanded and 52 nodes pruned
+Found -5.703312334891282 score for (4, 2) move
+Time spent at Iterative Deepening: 0.7746460437774658, (4, 2) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.018301010131835938s
+6 nodes expanded and 0 nodes pruned
+Found 3.7648002853067046 score for (5, 2) move
+AlphaBeta:
+Depth 2 completed in 0.09814572334289551s
+13 nodes expanded and 15 nodes pruned
+Found -0.49358974358974356 score for (5, 2) move
+AlphaBeta:
+Depth 3 completed in 0.3234388828277588s
+50 nodes expanded and 38 nodes pruned
+Found 3.602564102564102 score for (5, 3) move
+AlphaBeta:
+Depth 4 completed in 0.3186302185058594s
+32 nodes expanded and 41 nodes pruned
+Found 2.4363901220865705 score for (5, 4) move
+Time spent at Iterative Deepening: 0.7735922336578369, (5, 3) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.015092134475708008s
+5 nodes expanded and 0 nodes pruned
+Found 1.4266987693953987 score for (2, 2) move
+AlphaBeta:
+Depth 2 completed in 0.11640644073486328s
+15 nodes expanded and 18 nodes pruned
+Found -3.730769230769231 score for (2, 2) move
+AlphaBeta:
+Depth 3 completed in 0.32312750816345215s
+37 nodes expanded and 52 nodes pruned
+Found 0.0 score for (2, 2) move
+AlphaBeta:
+Depth 4 completed in 0.28357720375061035s
+37 nodes expanded and 26 nodes pruned
+Found 3.943337484433375 score for (2, 2) move
+Time spent at Iterative Deepening: 0.7537040710449219, (2, 2) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.0271151065826416s
+8 nodes expanded and 0 nodes pruned
+Found 3.602564102564102 score for (3, 1) move
+AlphaBeta:
+Depth 2 completed in 0.1870584487915039s
+19 nodes expanded and 34 nodes pruned
+Found 0.0 score for (3, 1) move
+AlphaBeta:
+Depth 3 completed in 0.4639160633087158s
+75 nodes expanded and 55 nodes pruned
+Found 2.5658222591362128 score for (3, 1) move
+AlphaBeta:
+Depth 4 completed in 0.08193159103393555s
+1 nodes expanded and 0 nodes pruned
+Found 4.133351790328534 score for (3, 1) move
+Time spent at Iterative Deepening: 0.7803277969360352, (3, 1) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.019129037857055664s
+6 nodes expanded and 0 nodes pruned
+Found 0.0 score for (4, 1) move
+AlphaBeta:
+Depth 2 completed in 0.1895289421081543s
+28 nodes expanded and 21 nodes pruned
+Found -2.8709226819691933 score for (5, 2) move
+AlphaBeta:
+Depth 3 completed in 0.554373025894165s
+42 nodes expanded and 95 nodes pruned
+Found 5.80388945752303 score for (5, 2) move
+Time spent at Iterative Deepening: 0.7751669883728027, (5, 2) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.037198543548583984s
+11 nodes expanded and 0 nodes pruned
+Found 2.5658222591362128 score for (5, 1) move
+AlphaBeta:
+Depth 2 completed in 0.33911800384521484s
+27 nodes expanded and 74 nodes pruned
+Found -1.5904445849136113 score for (5, 1) move
+AlphaBeta:
+Depth 3 completed in 0.37151098251342773s
+42 nodes expanded and 44 nodes pruned
+Found 1.3763113586323013 score for (2, 1) move
+Time spent at Iterative Deepening: 0.7656807899475098, (5, 1) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.02690720558166504s
+8 nodes expanded and 0 nodes pruned
+Found 2.442793931731985 score for (4, 1) move
+AlphaBeta:
+Depth 2 completed in 0.233168363571167s
+21 nodes expanded and 47 nodes pruned
+Found -1.62817679558011 score for (4, 1) move
+AlphaBeta:
+Depth 3 completed in 0.4852712154388428s
+33 nodes expanded and 86 nodes pruned
+Found 2.9420889720702563 score for (6, 2) move
+Time spent at Iterative Deepening: 0.7606527805328369, (4, 1) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.03367757797241211s
+8 nodes expanded and 0 nodes pruned
+Found 2.451588397790055 score for (1, 2) move
+AlphaBeta:
+Depth 2 completed in 0.3427467346191406s
+22 nodes expanded and 80 nodes pruned
+Found -0.952615709332127 score for (1, 2) move
+AlphaBeta:
+Depth 3 completed in 0.3662869930267334s
+32 nodes expanded and 50 nodes pruned
+Found 1.678160498106768 score for (3, 0) move
+Time spent at Iterative Deepening: 0.7602598667144775, (1, 2) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.030366182327270508s
+9 nodes expanded and 0 nodes pruned
+Found 2.472908186341022 score for (2, 3) move
+AlphaBeta:
+Depth 2 completed in 0.27219676971435547s
+31 nodes expanded and 50 nodes pruned
+Found -1.275211476240596 score for (2, 1) move
+AlphaBeta:
+Depth 3 completed in 0.4528687000274658s
+28 nodes expanded and 83 nodes pruned
+Found 2.2050984020944298 score for (2, 1) move
+Time spent at Iterative Deepening: 0.771998405456543, (2, 1) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.028874874114990234s
+9 nodes expanded and 0 nodes pruned
+Found 1.7082756727608206 score for (4, 5) move
+AlphaBeta:
+Depth 2 completed in 0.3352174758911133s
+35 nodes expanded and 64 nodes pruned
+Found -0.6856454971369079 score for (3, 0) move
+AlphaBeta:
+Depth 3 completed in 0.38391685485839844s
+31 nodes expanded and 61 nodes pruned
+Found 0.07483042160134357 score for (3, 0) move
+Time spent at Iterative Deepening: 0.7601613998413086, (3, 0) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.03250312805175781s
+10 nodes expanded and 0 nodes pruned
+Found 2.7389380530973453 score for (4, 0) move
+AlphaBeta:
+Depth 2 completed in 0.23979568481445312s
+22 nodes expanded and 46 nodes pruned
+Found 2.686909504837792 score for (4, 0) move
+AlphaBeta:
+Depth 3 completed in 0.47672486305236816s
+60 nodes expanded and 70 nodes pruned
+Found -5.9821073558648115 score for (6, 2) move
+Time spent at Iterative Deepening: 0.7651839256286621, (4, 0) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.01952648162841797s
+5 nodes expanded and 0 nodes pruned
+Found 0.07483042160134357 score for (5, 0) move
+AlphaBeta:
+Depth 2 completed in 0.18741965293884277s
+20 nodes expanded and 37 nodes pruned
+Found -0.6742206602887719 score for (5, 0) move
+AlphaBeta:
+Depth 3 completed in 0.4996626377105713s
+61 nodes expanded and 87 nodes pruned
+Found 1.747005988023953 score for (5, 0) move
+AlphaBeta:
+Depth 4 completed in 0.058379173278808594s
+1 nodes expanded and 0 nodes pruned
+Found -0.6742206602887719 score for (5, 0) move
+Time spent at Iterative Deepening: 0.784942626953125, (5, 0) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.03940749168395996s
+13 nodes expanded and 0 nodes pruned
+Found 3.3355414237767183 score for (2, 5) move
+AlphaBeta:
+Depth 2 completed in 0.3189263343811035s
+45 nodes expanded and 50 nodes pruned
+Found -0.16067864271457122 score for (2, 0) move
+AlphaBeta:
+Depth 3 completed in 0.4247467517852783s
+37 nodes expanded and 62 nodes pruned
+Found 2.3896039603960397 score for (2, 3) move
+Time spent at Iterative Deepening: 0.7946996688842773, (2, 0) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.02127385139465332s
+6 nodes expanded and 0 nodes pruned
+Found 1.747005988023953 score for (4, 5) move
+AlphaBeta:
+Depth 2 completed in 0.19675707817077637s
+17 nodes expanded and 47 nodes pruned
+Found -0.39542823588625176 score for (4, 5) move
+AlphaBeta:
+Depth 3 completed in 0.5495364665985107s
+57 nodes expanded and 99 nodes pruned
+Found -1.8994360902255636 score for (3, 5) move
+Time spent at Iterative Deepening: 0.7826497554779053, (4, 5) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.02886366844177246s
+8 nodes expanded and 0 nodes pruned
+Found 3.453728714034057 score for (6, 0) move
+AlphaBeta:
+Depth 2 completed in 0.11788344383239746s
+14 nodes expanded and 22 nodes pruned
+Found 3.453728714034057 score for (6, 0) move
+AlphaBeta:
+Depth 3 completed in 0.3257327079772949s
+78 nodes expanded and 22 nodes pruned
+Found 1.7703007518796996 score for (6, 0) move
+AlphaBeta:
+Depth 4 completed in 0.2812933921813965s
+40 nodes expanded and 17 nodes pruned
+Found -1.1862857142857144 score for (3, 5) move
+Time spent at Iterative Deepening: 0.7728273868560791, (6, 0) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.040718793869018555s
+13 nodes expanded and 0 nodes pruned
+Found 1.7703007518796996 score for (6, 1) move
+AlphaBeta:
+Depth 2 completed in 0.16536307334899902s
+35 nodes expanded and 17 nodes pruned
+Found 1.9166666666666665 score for (6, 4) move
+AlphaBeta:
+Depth 3 completed in 0.542412519454956s
+122 nodes expanded and 24 nodes pruned
+Found 3.5461538461538464 score for (2, 4) move
+Time spent at Iterative Deepening: 0.7640774250030518, (6, 4) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.015914201736450195s
+4 nodes expanded and 0 nodes pruned
+Found 0.524275362318841 score for (5, 4) move
+AlphaBeta:
+Depth 2 completed in 0.12696480751037598s
+18 nodes expanded and 23 nodes pruned
+Found -0.35738095238095247 score for (5, 4) move
+AlphaBeta:
+Depth 3 completed in 0.40028810501098633s
+61 nodes expanded and 66 nodes pruned
+Found 1.352605042016807 score for (5, 4) move
+AlphaBeta:
+Depth 4 completed in 0.21704483032226562s
+16 nodes expanded and 22 nodes pruned
+Found -1.7206099456099455 score for (5, 4) move
+Time spent at Iterative Deepening: 0.7762644290924072, (5, 4) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.04049420356750488s
+13 nodes expanded and 0 nodes pruned
+Found 0.9333333333333335 score for (2, 3) move
+AlphaBeta:
+Depth 2 completed in 0.25330305099487305s
+42 nodes expanded and 39 nodes pruned
+Found 0.14145658263305316 score for (0, 2) move
+AlphaBeta:
+Depth 3 completed in 0.47861289978027344s
+91 nodes expanded and 36 nodes pruned
+Found 0.8731682146542827 score for (4, 6) move
+Time spent at Iterative Deepening: 0.7871527671813965, (0, 2) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.01990485191345215s
+6 nodes expanded and 0 nodes pruned
+Found 1.4517617908407376 score for (2, 3) move
+AlphaBeta:
+Depth 2 completed in 0.18767976760864258s
+21 nodes expanded and 40 nodes pruned
+Found 0.4752747252747249 score for (2, 3) move
+AlphaBeta:
+Depth 3 completed in 0.5538403987884521s
+72 nodes expanded and 92 nodes pruned
+Found 1.8062149118487145 score for (1, 1) move
+Time spent at Iterative Deepening: 0.7766721248626709, (2, 3) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.038299560546875s
+12 nodes expanded and 0 nodes pruned
+Found 0.019047619047619035 score for (3, 5) move
+AlphaBeta:
+Depth 2 completed in 0.2898283004760742s
+38 nodes expanded and 58 nodes pruned
+Found -0.4684878983944404 score for (1, 3) move
+AlphaBeta:
+Depth 3 completed in 0.4425995349884033s
+43 nodes expanded and 78 nodes pruned
+Found -0.3693181818181818 score for (1, 4) move
+Time spent at Iterative Deepening: 0.7880110740661621, (1, 3) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.024886369705200195s
+6 nodes expanded and 0 nodes pruned
+Found 2.181364326224139 score for (1, 1) move
+AlphaBeta:
+Depth 2 completed in 0.1710357666015625s
+21 nodes expanded and 38 nodes pruned
+Found -1.5550047778308649 score for (1, 1) move
+AlphaBeta:
+Depth 3 completed in 0.519322395324707s
+65 nodes expanded and 116 nodes pruned
+Found 1.9926813094390892 score for (1, 1) move
+AlphaBeta:
+Depth 4 completed in 0.048874616622924805s
+1 nodes expanded and 0 nodes pruned
+Found -1.5550047778308649 score for (1, 1) move
+Time spent at Iterative Deepening: 0.7821085453033447, (1, 1) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.03757286071777344s
+12 nodes expanded and 0 nodes pruned
+Found 0.806298773690078 score for (6, 3) move
+AlphaBeta:
+Depth 2 completed in 0.3273320198059082s
+37 nodes expanded and 72 nodes pruned
+Found -0.6325695581014731 score for (1, 4) move
+AlphaBeta:
+Depth 3 completed in 0.38061070442199707s
+27 nodes expanded and 76 nodes pruned
+Found 10.027620704654197 score for (6, 3) move
+Time spent at Iterative Deepening: 0.7565021514892578, (1, 4) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.02149343490600586s
+8 nodes expanded and 0 nodes pruned
+Found 2.061850027367269 score for (0, 3) move
+AlphaBeta:
+Depth 2 completed in 0.26694154739379883s
+36 nodes expanded and 55 nodes pruned
+Found -2.3716741090235063 score for (2, 4) move
+AlphaBeta:
+Depth 3 completed in 0.4616682529449463s
+55 nodes expanded and 77 nodes pruned
+Found 2.083623693379791 score for (2, 4) move
+Time spent at Iterative Deepening: 0.7600948810577393, (2, 4) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.03725743293762207s
+13 nodes expanded and 0 nodes pruned
+Found 1.4025612941275591 score for (6, 3) move
+AlphaBeta:
+Depth 2 completed in 0.35800909996032715s
+40 nodes expanded and 81 nodes pruned
+Found -0.2630898513251455 score for (3, 5) move
+AlphaBeta:
+Depth 3 completed in 0.38947606086730957s
+28 nodes expanded and 77 nodes pruned
+Found 10.838158110546171 score for (6, 3) move
+Time spent at Iterative Deepening: 0.7943210601806641, (3, 5) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.027294158935546875s
+10 nodes expanded and 0 nodes pruned
+Found 1.6624423963133643 score for (1, 5) move
+AlphaBeta:
+Depth 2 completed in 0.3322415351867676s
+32 nodes expanded and 85 nodes pruned
+Found -1.1143933637284702 score for (1, 5) move
+AlphaBeta:
+Depth 3 completed in 0.3933238983154297s
+40 nodes expanded and 78 nodes pruned
+Found 1.691905901116427 score for (1, 5) move
+Time spent at Iterative Deepening: 0.7629272937774658, (1, 5) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.039856910705566406s
+15 nodes expanded and 0 nodes pruned
+Found 1.1829529693607361 score for (2, 5) move
+AlphaBeta:
+Depth 2 completed in 0.3713865280151367s
+40 nodes expanded and 87 nodes pruned
+Found 1.1652014652014655 score for (1, 0) move
+AlphaBeta:
+Depth 3 completed in 0.35408902168273926s
+22 nodes expanded and 54 nodes pruned
+Found 10.620179820179821 score for (2, 5) move
+Time spent at Iterative Deepening: 0.7768352031707764, (1, 0) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.025044679641723633s
+7 nodes expanded and 0 nodes pruned
+Found 0.9207292707292707 score for (7, 4) move
+AlphaBeta:
+Depth 2 completed in 0.27343153953552246s
+55 nodes expanded and 41 nodes pruned
+Found -0.4927747401309859 score for (2, 5) move
+AlphaBeta:
+Depth 3 completed in 0.4607357978820801s
+41 nodes expanded and 92 nodes pruned
+Found 1.3074175824175824 score for (2, 6) move
+Time spent at Iterative Deepening: 0.768817663192749, (2, 5) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.04515266418457031s
+15 nodes expanded and 0 nodes pruned
+Found 1.5258924082453498 score for (0, 3) move
+AlphaBeta:
+Depth 2 completed in 0.25827980041503906s
+34 nodes expanded and 57 nodes pruned
+Found 1.4724759469004993 score for (0, 5) move
+AlphaBeta:
+Depth 3 completed in 0.45766258239746094s
+123 nodes expanded and 11 nodes pruned
+Found 9.185609628466771 score for (0, 4) move
+Time spent at Iterative Deepening: 0.7752645015716553, (0, 5) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.019017457962036133s
+5 nodes expanded and 0 nodes pruned
+Found 0.6227986846912676 score for (0, 3) move
+AlphaBeta:
+Depth 2 completed in 0.16493844985961914s
+33 nodes expanded and 28 nodes pruned
+Found -0.840129749768304 score for (0, 4) move
+AlphaBeta:
+Depth 3 completed in 0.5891158580780029s
+67 nodes expanded and 135 nodes pruned
+Found -1.7439759036144578 score for (7, 4) move
+Time spent at Iterative Deepening: 0.7863457202911377, (0, 4) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.045171499252319336s
+14 nodes expanded and 0 nodes pruned
+Found 1.2357523862998314 score for (0, 3) move
+AlphaBeta:
+Depth 2 completed in 0.2758309841156006s
+29 nodes expanded and 72 nodes pruned
+Found 1.1424603174603176 score for (0, 3) move
+AlphaBeta:
+Depth 3 completed in 0.4354863166809082s
+100 nodes expanded and 36 nodes pruned
+Found 8.588841506751953 score for (3, 6) move
+Time spent at Iterative Deepening: 0.7693796157836914, (0, 3) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.013327598571777344s
+4 nodes expanded and 0 nodes pruned
+Found 0.7082528957528962 score for (0, 1) move
+AlphaBeta:
+Depth 2 completed in 0.10869646072387695s
+29 nodes expanded and 12 nodes pruned
+Found -1.9702729044834308 score for (7, 4) move
+AlphaBeta:
+Depth 3 completed in 0.44964075088500977s
+63 nodes expanded and 109 nodes pruned
+Found 0.32837750484809236 score for (7, 4) move
+AlphaBeta:
+Depth 4 completed in 0.16717267036437988s
+29 nodes expanded and 17 nodes pruned
+Found 1.231492192018508 score for (0, 1) move
+Time spent at Iterative Deepening: 0.7559113502502441, (7, 4) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.0438535213470459s
+14 nodes expanded and 0 nodes pruned
+Found 2.5702917771883294 score for (0, 1) move
+AlphaBeta:
+Depth 2 completed in 0.1991417407989502s
+33 nodes expanded and 40 nodes pruned
+Found 1.0619018776499094 score for (5, 6) move
+AlphaBeta:
+Depth 3 completed in 0.5027315616607666s
+96 nodes expanded and 79 nodes pruned
+Found 11.032504288164665 score for (0, 6) move
+Time spent at Iterative Deepening: 0.7588675022125244, (5, 6) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.008315324783325195s
+4 nodes expanded and 0 nodes pruned
+Found 0.4635574399353928 score for (5, 5) move
+AlphaBeta:
+Depth 2 completed in 0.10324335098266602s
+29 nodes expanded and 12 nodes pruned
+Found -2.0541666666666667 score for (4, 6) move
+AlphaBeta:
+Depth 3 completed in 0.50522780418396s
+61 nodes expanded and 129 nodes pruned
+Found 0.3624865987670862 score for (4, 6) move
+AlphaBeta:
+Depth 4 completed in 0.150376558303833s
+29 nodes expanded and 0 nodes pruned
+Found -7.989277271192165 score for (5, 5) move
+Time spent at Iterative Deepening: 0.7797830104827881, (4, 6) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.04290199279785156s
+14 nodes expanded and 0 nodes pruned
+Found 2.236111111111111 score for (4, 7) move
+AlphaBeta:
+Depth 2 completed in 0.24309730529785156s
+29 nodes expanded and 63 nodes pruned
+Found 0.5810439560439561 score for (4, 7) move
+AlphaBeta:
+Depth 3 completed in 0.47513318061828613s
+67 nodes expanded and 89 nodes pruned
+Found 10.921325051759833 score for (0, 6) move
+Time spent at Iterative Deepening: 0.7745182514190674, (4, 7) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.014220476150512695s
+4 nodes expanded and 0 nodes pruned
+Found 0.3624865987670862 score for (5, 5) move
+AlphaBeta:
+Depth 2 completed in 0.10419678688049316s
+17 nodes expanded and 23 nodes pruned
+Found -1.9114906832298137 score for (5, 5) move
+AlphaBeta:
+Depth 3 completed in 0.3137178421020508s
+47 nodes expanded and 79 nodes pruned
+Found 0.8536352792921502 score for (5, 5) move
+AlphaBeta:
+Depth 4 completed in 0.3248634338378906s
+36 nodes expanded and 65 nodes pruned
+Found -6.288027155674214 score for (5, 5) move
+Time spent at Iterative Deepening: 0.7726309299468994, (5, 5) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.034610748291015625s
+12 nodes expanded and 0 nodes pruned
+Found 0.6268556005398113 score for (0, 6) move
+AlphaBeta:
+Depth 2 completed in 0.23016881942749023s
+27 nodes expanded and 62 nodes pruned
+Found 0.06920699314208442 score for (0, 6) move
+AlphaBeta:
+Depth 3 completed in 0.4891088008880615s
+90 nodes expanded and 82 nodes pruned
+Found 8.277134986225896 score for (7, 5) move
+Time spent at Iterative Deepening: 0.7657694816589355, (0, 6) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.01604938507080078s
+6 nodes expanded and 0 nodes pruned
+Found 0.8536352792921502 score for (0, 1) move
+AlphaBeta:
+Depth 2 completed in 0.17277836799621582s
+21 nodes expanded and 48 nodes pruned
+Found -4.504589554589555 score for (0, 1) move
+AlphaBeta:
+Depth 3 completed in 0.40713930130004883s
+52 nodes expanded and 117 nodes pruned
+Found -4.4215326340326335 score for (0, 1) move
+AlphaBeta:
+Depth 4 completed in 0.15620779991149902s
+27 nodes expanded and 9 nodes pruned
+Found -7.838649425287357 score for (0, 1) move
+Time spent at Iterative Deepening: 0.767125129699707, (0, 1) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.03095221519470215s
+12 nodes expanded and 0 nodes pruned
+Found 9.24975744975745 score for (0, 0) move
+AlphaBeta:
+Depth 2 completed in 0.2260892391204834s
+26 nodes expanded and 69 nodes pruned
+Found 9.440850815850817 score for (0, 0) move
+AlphaBeta:
+Depth 3 completed in 0.49585628509521484s
+108 nodes expanded and 84 nodes pruned
+Found -8.71673669467787 score for (2, 6) move
+Time spent at Iterative Deepening: 0.7658181190490723, (0, 0) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.013481616973876953s
+5 nodes expanded and 0 nodes pruned
+Found -4.4215326340326335 score for (3, 7) move
+AlphaBeta:
+Depth 2 completed in 0.11847591400146484s
+29 nodes expanded and 20 nodes pruned
+Found -6.275701938879886 score for (6, 7) move
+AlphaBeta:
+Depth 3 completed in 0.33207201957702637s
+64 nodes expanded and 74 nodes pruned
+Found -4.700203751014597 score for (3, 7) move
+AlphaBeta:
+Depth 4 completed in 0.29172563552856445s
+43 nodes expanded and 57 nodes pruned
+Found -9.043121011291115 score for (3, 7) move
+Time spent at Iterative Deepening: 0.7687540054321289, (3, 7) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.03348493576049805s
+12 nodes expanded and 0 nodes pruned
+Found 9.680677655677657 score for (5, 7) move
+AlphaBeta:
+Depth 2 completed in 0.19000911712646484s
+29 nodes expanded and 50 nodes pruned
+Found 9.97887742338962 score for (2, 7) move
+AlphaBeta:
+Depth 3 completed in 0.5342085361480713s
+119 nodes expanded and 97 nodes pruned
+Found 7.684126984126985 score for (6, 2) move
+Time spent at Iterative Deepening: 0.7692761421203613, (2, 7) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.016579866409301758s
+5 nodes expanded and 0 nodes pruned
+Found -4.700203751014597 score for (1, 6) move
+AlphaBeta:
+Depth 2 completed in 0.11915040016174316s
+30 nodes expanded and 21 nodes pruned
+Found -6.258787128712871 score for (5, 7) move
+AlphaBeta:
+Depth 3 completed in 0.5331900119781494s
+97 nodes expanded and 126 nodes pruned
+Found -5.363500784929356 score for (6, 7) move
+AlphaBeta:
+Depth 4 completed in 0.07546353340148926s
+1 nodes expanded and 0 nodes pruned
+Found -7.207206127206127 score for (1, 6) move
+Time spent at Iterative Deepening: 0.7584891319274902, (6, 7) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.038103580474853516s
+12 nodes expanded and 0 nodes pruned
+Found 11.140675990675993 score for (3, 6) move
+AlphaBeta:
+Depth 2 completed in 0.14685773849487305s
+24 nodes expanded and 38 nodes pruned
+Found 10.964862673558327 score for (3, 6) move
+AlphaBeta:
+Depth 3 completed in 0.4906952381134033s
+144 nodes expanded and 64 nodes pruned
+Found 12.031644777986243 score for (6, 6) move
+AlphaBeta:
+Depth 4 completed in 0.06553864479064941s
+1 nodes expanded and 0 nodes pruned
+Found 8.78442146089205 score for (3, 6) move
+Time spent at Iterative Deepening: 0.7563667297363281, (6, 6) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.012371301651000977s
+4 nodes expanded and 0 nodes pruned
+Found -5.299773242630385 score for (1, 6) move
+AlphaBeta:
+Depth 2 completed in 0.0823366641998291s
+27 nodes expanded and 10 nodes pruned
+Found -8.916213895394224 score for (6, 5) move
+AlphaBeta:
+Depth 3 completed in 0.2319014072418213s
+52 nodes expanded and 49 nodes pruned
+Found -6.512906701141995 score for (1, 6) move
+AlphaBeta:
+Depth 4 completed in 0.4174840450286865s
+110 nodes expanded and 65 nodes pruned
+Found -4.070049019607843 score for (1, 6) move
+Time spent at Iterative Deepening: 0.7571883201599121, (1, 6) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.02528691291809082s
+12 nodes expanded and 0 nodes pruned
+Found 12.031644777986243 score for (3, 6) move
+AlphaBeta:
+Depth 2 completed in 0.1417405605316162s
+29 nodes expanded and 32 nodes pruned
+Found 11.977655677655678 score for (0, 7) move
+AlphaBeta:
+Depth 3 completed in 0.5769999027252197s
+149 nodes expanded and 90 nodes pruned
+Found 8.518347723704869 score for (7, 5) move
+Time spent at Iterative Deepening: 0.7527589797973633, (0, 7) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.024938106536865234s
+6 nodes expanded and 0 nodes pruned
+Found -6.512906701141995 score for (2, 6) move
+AlphaBeta:
+Depth 2 completed in 0.1800370216369629s
+26 nodes expanded and 26 nodes pruned
+Found -8.767620463272637 score for (3, 6) move
+AlphaBeta:
+Depth 3 completed in 0.3274199962615967s
+58 nodes expanded and 89 nodes pruned
+Found -7.16416892344023 score for (3, 6) move
+AlphaBeta:
+Depth 4 completed in 0.21525049209594727s
+53 nodes expanded and 20 nodes pruned
+Found -6.617624223602484 score for (2, 6) move
+Time spent at Iterative Deepening: 0.763052225112915, (3, 6) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.025228500366210938s
+9 nodes expanded and 0 nodes pruned
+Found 12.490759321194101 score for (2, 6) move
+AlphaBeta:
+Depth 2 completed in 0.1072835922241211s
+19 nodes expanded and 32 nodes pruned
+Found 11.241772276255034 score for (2, 6) move
+AlphaBeta:
+Depth 3 completed in 0.30698108673095703s
+89 nodes expanded and 56 nodes pruned
+Found 12.560166840458812 score for (5, 7) move
+AlphaBeta:
+Depth 4 completed in 0.31103038787841797s
+58 nodes expanded and 74 nodes pruned
+Found 6.042424242424242 score for (5, 7) move
+Time spent at Iterative Deepening: 0.7633671760559082, (5, 7) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.013663530349731445s
+5 nodes expanded and 0 nodes pruned
+Found -5.499738203674442 score for (2, 6) move
+AlphaBeta:
+Depth 2 completed in 0.07647824287414551s
+15 nodes expanded and 21 nodes pruned
+Found -7.76489898989899 score for (2, 6) move
+AlphaBeta:
+Depth 3 completed in 0.1671614646911621s
+35 nodes expanded and 46 nodes pruned
+Found -7.56940732375515 score for (2, 6) move
+AlphaBeta:
+Depth 4 completed in 0.44105005264282227s
+96 nodes expanded and 116 nodes pruned
+Found -8.92859231411863 score for (2, 6) move
+Time spent at Iterative Deepening: 0.7109534740447998, (2, 6) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.01946735382080078s
+8 nodes expanded and 0 nodes pruned
+Found 12.560166840458812 score for (7, 7) move
+AlphaBeta:
+Depth 2 completed in 0.09575819969177246s
+17 nodes expanded and 31 nodes pruned
+Found 10.36489898989899 score for (7, 7) move
+AlphaBeta:
+Depth 3 completed in 0.21658873558044434s
+65 nodes expanded and 41 nodes pruned
+Found 11.92261904761905 score for (7, 7) move
+AlphaBeta:
+Depth 4 completed in 0.40833091735839844s
+84 nodes expanded and 111 nodes pruned
+Found 6.287878787878787 score for (6, 2) move
+Time spent at Iterative Deepening: 0.7522661685943604, (7, 7) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.014498710632324219s
+4 nodes expanded and 0 nodes pruned
+Found -7.56940732375515 score for (6, 5) move
+AlphaBeta:
+Depth 2 completed in 0.04452848434448242s
+12 nodes expanded and 10 nodes pruned
+Found -8.92859231411863 score for (6, 5) move
+AlphaBeta:
+Depth 3 completed in 0.16991543769836426s
+45 nodes expanded and 38 nodes pruned
+Found -8.098386446336796 score for (7, 6) move
+AlphaBeta:
+Depth 4 completed in 0.4653193950653076s
+123 nodes expanded and 111 nodes pruned
+Found -8.983363703571614 score for (6, 5) move
+Time spent at Iterative Deepening: 0.7075181007385254, (6, 5) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.024135112762451172s
+7 nodes expanded and 0 nodes pruned
+Found 13.766666666666666 score for (7, 5) move
+AlphaBeta:
+Depth 2 completed in 0.0741434097290039s
+16 nodes expanded and 18 nodes pruned
+Found 11.707078039927403 score for (7, 5) move
+AlphaBeta:
+Depth 3 completed in 0.20683503150939941s
+60 nodes expanded and 42 nodes pruned
+Found 12.976140717520028 score for (6, 2) move
+AlphaBeta:
+Depth 4 completed in 0.43749022483825684s
+95 nodes expanded and 115 nodes pruned
+Found 7.98209745762712 score for (6, 1) move
+Time spent at Iterative Deepening: 0.7552244663238525, (6, 2) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.02544260025024414s
+6 nodes expanded and 0 nodes pruned
+Found -5.616742415740845 score for (7, 2) move
+AlphaBeta:
+Depth 2 completed in 0.06326532363891602s
+15 nodes expanded and 17 nodes pruned
+Found -8.574011465902004 score for (7, 2) move
+AlphaBeta:
+Depth 3 completed in 0.16436100006103516s
+44 nodes expanded and 40 nodes pruned
+Found -6.888334174592211 score for (7, 6) move
+AlphaBeta:
+Depth 4 completed in 0.3872499465942383s
+98 nodes expanded and 106 nodes pruned
+Found -7.6968079127795885 score for (1, 7) move
+Time spent at Iterative Deepening: 0.6538717746734619, (1, 7) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.014530181884765625s
+5 nodes expanded and 0 nodes pruned
+Found 13.418596059113302 score for (7, 5) move
+AlphaBeta:
+Depth 2 completed in 0.05097317695617676s
+13 nodes expanded and 14 nodes pruned
+Found 11.42463680387409 score for (7, 5) move
+AlphaBeta:
+Depth 3 completed in 0.10125064849853516s
+29 nodes expanded and 24 nodes pruned
+Found 12.40625 score for (7, 5) move
+AlphaBeta:
+Depth 4 completed in 0.20964670181274414s
+65 nodes expanded and 49 nodes pruned
+Found 10.169617486338797 score for (7, 5) move
+Time spent at Iterative Deepening: 0.3894355297088623, (7, 5) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.013992071151733398s
+6 nodes expanded and 0 nodes pruned
+Found -7.500528770830366 score for (6, 3) move
+AlphaBeta:
+Depth 2 completed in 0.04093360900878906s
+12 nodes expanded and 10 nodes pruned
+Found -7.105175983436853 score for (6, 3) move
+AlphaBeta:
+Depth 3 completed in 0.08190083503723145s
+34 nodes expanded and 10 nodes pruned
+Found -6.526379916013891 score for (6, 3) move
+AlphaBeta:
+Depth 4 completed in 0.21126842498779297s
+71 nodes expanded and 45 nodes pruned
+Found -5.334422331323383 score for (7, 2) move
+Time spent at Iterative Deepening: 0.3606390953063965, (7, 2) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.010716915130615234s
+5 nodes expanded and 0 nodes pruned
+Found 12.575757575757578 score for (6, 3) move
+AlphaBeta:
+Depth 2 completed in 0.03271079063415527s
+11 nodes expanded and 6 nodes pruned
+Found 10.169617486338797 score for (6, 3) move
+AlphaBeta:
+Depth 3 completed in 0.06756401062011719s
+30 nodes expanded and 9 nodes pruned
+Found 11.683669354838708 score for (7, 3) move
+AlphaBeta:
+Depth 4 completed in 0.12035918235778809s
+44 nodes expanded and 26 nodes pruned
+Found 10.522857142857143 score for (6, 3) move
+Time spent at Iterative Deepening: 0.24171757698059082, (6, 3) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.005669355392456055s
+4 nodes expanded and 0 nodes pruned
+Found -7.62991378408764 score for (7, 3) move
+AlphaBeta:
+Depth 2 completed in 0.019986867904663086s
+8 nodes expanded and 4 nodes pruned
+Found -5.334422331323383 score for (7, 3) move
+AlphaBeta:
+Depth 3 completed in 0.03618884086608887s
+17 nodes expanded and 4 nodes pruned
+Found -6.382932900432901 score for (7, 3) move
+AlphaBeta:
+Depth 4 completed in 0.072998046875s
+32 nodes expanded and 8 nodes pruned
+Found -5.70869008808053 score for (6, 1) move
+Time spent at Iterative Deepening: 0.14321541786193848, (6, 1) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.014157772064208984s
+4 nodes expanded and 0 nodes pruned
+Found 13.376979472140762 score for (7, 0) move
+AlphaBeta:
+Depth 2 completed in 0.01836681365966797s
+8 nodes expanded and 3 nodes pruned
+Found 11.13888888888889 score for (7, 0) move
+AlphaBeta:
+Depth 3 completed in 0.026389122009277344s
+14 nodes expanded and 3 nodes pruned
+Found 12.258079268292683 score for (7, 0) move
+AlphaBeta:
+Depth 4 completed in 0.035497188568115234s
+20 nodes expanded and 3 nodes pruned
+Found 11.413360323886641 score for (7, 0) move
+Time spent at Iterative Deepening: 0.1071169376373291, (7, 0) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.007021665573120117s
+3 nodes expanded and 0 nodes pruned
+Found -7.343803528605687 score for (7, 3) move
+AlphaBeta:
+Depth 2 completed in 0.01063990592956543s
+5 nodes expanded and 1 nodes pruned
+Found -5.628624231950845 score for (7, 3) move
+AlphaBeta:
+Depth 3 completed in 0.014325857162475586s
+9 nodes expanded and 0 nodes pruned
+Found -8.423753389295397 score for (7, 6) move
+AlphaBeta:
+Depth 4 completed in 0.0141448974609375s
+9 nodes expanded and 0 nodes pruned
+Found -8.423753389295397 score for (7, 6) move
+Time spent at Iterative Deepening: 0.05723428726196289, (7, 6) chosen
+
+WHITE playing
+AlphaBeta:
+Depth 1 completed in 0.0045604705810546875s
+3 nodes expanded and 0 nodes pruned
+Found 12.258079268292683 score for (7, 3) move
+AlphaBeta:
+Depth 2 completed in 0.0064775943756103516s
+5 nodes expanded and 0 nodes pruned
+Found 11.413360323886641 score for (7, 3) move
+AlphaBeta:
+Depth 3 completed in 0.006650686264038086s
+5 nodes expanded and 0 nodes pruned
+Found 11.413360323886641 score for (7, 3) move
+AlphaBeta:
+Depth 4 completed in 0.006883144378662109s
+5 nodes expanded and 0 nodes pruned
+Found 11.413360323886641 score for (7, 3) move
+Time spent at Iterative Deepening: 0.033118247985839844, (7, 3) chosen
+
+BLACK playing
+AlphaBeta:
+Depth 1 completed in 0.0041048526763916016s
+2 nodes expanded and 0 nodes pruned
+Found -8.423753389295397 score for (7, 1) move
+AlphaBeta:
+Depth 2 completed in 0.0050296783447265625s
+2 nodes expanded and 0 nodes pruned
+Found -8.423753389295397 score for (7, 1) move
+AlphaBeta:
+Depth 3 completed in 0.002551555633544922s
+2 nodes expanded and 0 nodes pruned
+Found -8.423753389295397 score for (7, 1) move
+AlphaBeta:
+Depth 4 completed in 0.0019512176513671875s
+2 nodes expanded and 0 nodes pruned
+Found -8.423753389295397 score for (7, 1) move
+Time spent at Iterative Deepening: 0.0272061824798584, (7, 1) chosen
+
+WHITE wins! 44:20
