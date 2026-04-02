@@ -1,6 +1,6 @@
 # Busca Adversarial em Jogos - T1 MC906
 
-Agente inteligente para **Othello (Reversi)** com busca adversarial baseada em Minimax e Alpha-Beta Pruning com Iterative Deepening, desenvolvido para a disciplina MC906 — Introdução à Inteligência Artificial (UNICAMP).
+Agente inteligente para Othello (Reversi) com busca adversarial baseada em Minimax e Alpha-Beta Pruning com Iterative Deepening, desenvolvido para a disciplina MC906 — Introdução à Inteligência Artificial (UNICAMP).
 
 ## Integrantes
 
@@ -34,10 +34,10 @@ O tema correspondente a $r = 1$ é Othello (Reversi)
 O Othello é disputado em um tabuleiro 8×8 por dois jogadores (preto e branco):
 
 - O jogo começa com 2 peças pretas em (3,4) e (4,3), e 2 brancas em (3,3) e (4,4).
-- Em cada turno, o jogador posiciona uma peça em uma célula vazia de forma que **flanqueie** ao menos uma sequência contínua de peças adversárias — entre a nova peça e outra peça própria — em qualquer das 8 direções (horizontal, vertical ou diagonal).
-- Todas as peças adversárias flanqueadas são **invertidas** para a cor do jogador.
-- Se um jogador não tiver jogadas válidas, ele **passa a vez**. Se ambos passarem em sequência ou o tabuleiro estiver completo, o jogo termina.
-- Vence quem tiver **mais peças** no tabuleiro ao final.
+- Em cada turno, o jogador posiciona uma peça em uma célula vazia de forma que flanqueie ao menos uma sequência contínua de peças adversárias — entre a nova peça e outra peça própria — em qualquer das 8 direções (horizontal, vertical ou diagonal).
+- Todas as peças adversárias flanqueadas são invertidas para a cor do jogador.
+- Se um jogador não tiver jogadas válidas, ele passa a vez. Se ambos passarem em sequência ou o tabuleiro estiver completo, o jogo termina.
+- Vence quem tiver mais peças no tabuleiro ao final.
 
 
 ## Como executar
