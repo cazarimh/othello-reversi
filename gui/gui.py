@@ -28,7 +28,7 @@ class OthelloGUI:
         tk.Radiobutton(controls, text="Agente x Agente", variable=self.mode, value=3).pack(side='left')
         tk.Radiobutton(controls, text="Minimax x Alphabeta", variable=self.mode, value=4).pack(side='left')
         tk.Radiobutton(controls, text="Estático x Dinâmico", variable=self.mode, value=5).pack(side='left')
-        tk.Radiobutton(controls, text="Baseline x Complexo", variable=self.mode, value=3).pack(side='left')
+        tk.Radiobutton(controls, text="Baseline x Complexo", variable=self.mode, value=6).pack(side='left')
 
         tk.Button(controls, text="Novo Jogo", command=self.start_new_game).pack(side='left', padx=8)
 
